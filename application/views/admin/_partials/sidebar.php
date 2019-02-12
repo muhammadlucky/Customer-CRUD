@@ -30,6 +30,18 @@
         </div>
     </li>
 
+    <li class="nav-item dropdown <?php echo $this->uri->segment(2) == 'suppliers' ? 'active': '' ?>">
+        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <i class="fas fa-fw fa-boxes"></i>
+            <span>Supplier</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="<?php echo site_url('admin/suppliers/add') ?>">New Supplier</a>
+            <a class="dropdown-item" href="<?php echo site_url('admin/suppliers') ?>">List Supplier</a>
+        </div>
+    </li>
+
     <li class="nav-item">
         <a class="nav-link" href="#">
             <i class="fas fa-fw fa-users"></i>
